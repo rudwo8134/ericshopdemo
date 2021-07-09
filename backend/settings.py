@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
-from decouple import config
 
 
 
@@ -129,7 +128,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'proshop',
         'USER': 'eric',
-        'PASSWORD': os.environ.get('DB_PASS'),
+        'PASSWORD': 'Wldus8134',
 #        'HOST': os.environ.get('HOST'),
         'HOST': 'proshop-identifier.cgjtcg0df3f7.ca-central-1.rds.amazonaws.com',
         'PORT':'5432'
@@ -194,8 +193,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY =  os.environ.get('AWS_SECRET_ACCESS_KEY')
+AWS_ACCESS_KEY_ID = 'AKIAXJVV3TCYFM43BWTJ'
+AWS_SECRET_ACCESS_KEY =  '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 '
 AWS_QUERYSTRING_AUTH = False
 AWS_STORAGE_BUCKET_NAME = 'proshop-bucket-demo12'
 
