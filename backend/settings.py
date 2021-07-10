@@ -1,5 +1,6 @@
 
 import os
+import django_heroku
 from datetime import timedelta
 from pathlib import Path
 
@@ -192,9 +193,10 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_STORAGE_BUCKET_NAME = 'proshop-bucket-demo12'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
+django_heroku.settings(locals())
 
 
 
 if os.getcwd() == '/app':
     DEBUG = False
+
