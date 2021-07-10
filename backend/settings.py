@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e@nq_7(g()j1zq5kl5xns1x$u!nmbs5mg)(1v!5qxm(jqt!_54'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ericshop.herokuapp.com']
 
@@ -122,7 +122,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'proshop',
         'USER': 'eric',
-        'PASSWORD': os.environ.get("DB_PASS"),
+        'PASSWORD': 'Wldus8134',
 #        'HOST': os.environ.get('HOST'),
         'HOST': 'proshop-identifier.cgjtcg0df3f7.ca-central-1.rds.amazonaws.com',
         'PORT':'5432'
@@ -186,8 +186,8 @@ CORS_ALLOW_ALL_ORIGINS = True
 AWS_QUERYSTRING_AUTH = False
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
-AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
+AWS_ACCESS_KEY_ID = 'AKIAXJVV3TCYATLKNIJO'
+AWS_SECRET_ACCESS_KEY = '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'
 
 AWS_STORAGE_BUCKET_NAME = 'proshop-bucket-demo12'
 
