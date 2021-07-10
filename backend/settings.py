@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-e@nq_7(g()j1zq5kl5xns1x$u!nmbs5mg)(1v!5qxm(jqt!_54
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost','ericshop.herokuapp.com','.herokuapp.com']
+ALLOWED_HOSTS = ["127.0.0.1", "localhost","ericshop.herokuapp.com",".herokuapp.com"]
 
 
 # Application definition
@@ -103,7 +103,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/build')
+           BASE_DIR/'frontend/build'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -128,7 +128,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'proshop',
         'USER': 'eric',
-        'PASSWORD': os.environ.get('DB_PASS'),
+        'PASSWORD': 'Wldus8134',
 #        'HOST': os.environ.get('HOST'),
         'HOST': 'proshop-identifier.cgjtcg0df3f7.ca-central-1.rds.amazonaws.com',
         'PORT':'5432'
